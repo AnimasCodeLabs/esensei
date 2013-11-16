@@ -2,6 +2,11 @@ body{
   background: asset-url("background.png");
 }
 
+h1, h2, h3 {
+  font-family: "Cabin", $helvetica;
+  text-transform: uppercase;
+}
+
 .container{
   @include outer-container;
 }
