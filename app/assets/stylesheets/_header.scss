@@ -1,0 +1,36 @@
+#nav-bar{
+  background: asset-url("navigation-bar.png") no-repeat;
+  background-position-x: center;
+  height: 100px;
+  text-align: center;
+  margin-top: 66px;
+
+  ul{
+    padding-top: .5em;
+  }
+
+  li{
+    @include inline-block;
+    margin: 0 1em;
+    text-transform: uppercase;
+
+    a {
+      color: white;
+    }
+  }
+
+  .left{
+    float: left;
+    margin-left: 7%;
+  }
+
+  .right{
+    float: right;
+    margin-right: 7%;
+  }
+
+  .logo{
+    margin-top: em(-49);
+  }
+   
+}
