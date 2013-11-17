@@ -11,7 +11,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 .bridge-bar{
@@ -26,5 +25,43 @@
 
 .how-it-works{
   background-color: #fff;
-  height: 400px;
+
+  h2{
+    text-align: center;
+    margin: 46px 0;
+  }
+
+
+  .video{
+    @include span-columns(6);
+  }
+
+  .text{
+    @include span-columns(6);
+    @include omega;
+
+    h3 {
+      margin-bottom: .5em; 
+    }
+
+    p{
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.learn{
+  background-color: #ba691d;
+  color: white;
+
+  h2{
+    text-align: center;
+    margin: 46px 0;
+  }
+
+  p.details{
+   @include shift(1);
+   @include span-columns(10);
+   @include omega; 
+  }
 }
