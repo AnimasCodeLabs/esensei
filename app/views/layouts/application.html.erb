@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>E-Sensei</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Cabin" %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <!--[if lt IE 9]>
+  <head>
+    <title>E-Sensei</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Cabin" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <!--[if lt IE 9]>
     <script src="/html5shiv.js"></script>
-  <![endif]-->
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <![endif]-->
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="page-wrap">
+      <header id="main-header">
+        <div class="container">
+          <nav id="nav-bar">
+            <ul class="left">
+              <li><%= link_to "Learn", "#" %></li>
+              <li><%= link_to "Connect", "#" %></li>
+              <li><%= link_to "Community", "#" %></li>
+            </ul> 
+            <a class="logo" href="/">
+              <%= image_tag "logo.png", alt: "E-Sensai", class: "logo-image" %>
+              <%= image_tag "tagline.png", alt: "Your path to freelance freedom", class: "logo-tagline" %>
+            </a>
+            <ul class="right">
+              <li><%= link_to "How It Works", "#" %></li>
+              <li><%= link_to "Log In", "#" %></li>
+              <li><%= link_to "Sign Up", "#" %></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-<header id="main-header">
-  <div class="container">
-    <nav id="nav-bar">
-      <ul class="left">
-        <li><%= link_to "Learn", "#" %></li>
-        <li><%= link_to "Connect", "#" %></li>
-        <li><%= link_to "Community", "#" %></li>
-      </ul> 
-      <a class="logo" href="/">
-        <%= image_tag "logo.png", alt: "E-Sensai", class: "logo-image" %>
-        <%= image_tag "tagline.png", alt: "Your path to freelance freedom", class: "logo-tagline" %>
-      </a>
-      <ul class="right">
-        <li><%= link_to "How It Works", "#" %></li>
-        <li><%= link_to "Log In", "#" %></li>
-        <li><%= link_to "Sign Up", "#" %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<%= yield %>
-
-<footer id="main-footer">
-  <div class="container">
-    <nav class="links">
-      <ul>
-        <li><%= link_to "How it works", "#" %></li>
-        <li><%= link_to "Learn", "#" %></li>
-        <li><%= link_to "Connect", "#" %></li>
-        <li><%= link_to "Community", "#" %></li>
-        <li><%= link_to "Login", "#" %></li>
-        <li><%= link_to "Sign up", "#" %></li>
-      </ul>
-    </nav>
-    <div class="copyright">
-      Copyright 2013 esensai.co
+      <%= yield %>
     </div>
-  </div>
-</footer>
 
-</body>
+    <footer id="main-footer">
+      <div class="container">
+        <nav class="links">
+          <ul>
+            <li><%= link_to "How it works", "#" %></li>
+            <li><%= link_to "Learn", "#" %></li>
+            <li><%= link_to "Connect", "#" %></li>
+            <li><%= link_to "Community", "#" %></li>
+            <li><%= link_to "Login", "#" %></li>
+            <li><%= link_to "Sign up", "#" %></li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          Copyright 2013 esensai.co
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>

@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 body{
   background: asset-url("background.png");
   margin: 0;
@@ -6,6 +10,18 @@ body{
 
 h1, h2, h3 {
   text-transform: uppercase;
+}
+
+
+#page-wrap{
+  min-height: 100%;
+  margin-bottom: em(-72);
+
+  &:after{
+    content: "";
+    display: block;
+    height: em(72);
+  }
 }
 
 .container{
