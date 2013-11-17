@@ -60,9 +60,11 @@
   }
 
   p.details{
-   @include shift(1);
-   @include span-columns(10);
+   @include shift(2);
+   @include span-columns(8);
    @include omega; 
+
+   text-align: center;
   }
 
   .categories{
@@ -81,3 +83,67 @@
     }
   }
 }
+
+.connect{
+  color: #158788;
+
+  h2{
+    text-align: center;
+    margin: 46px 0;
+  }
+
+  p.details{
+   @include shift(2);
+   @include span-columns(8);
+   @include omega; 
+
+   text-align: center;
+  }
+
+  .senseis{
+    @include span-columns(12);
+    @include omega;
+    margin: 2em 0;  
+  }
+
+  .sensei{
+    @include span-columns(4);
+    @include omega(3n);
+    text-align:center;
+
+    .caption{
+      text-transform: uppercase;
+      font-size: 1.25em;
+    }
+  }
+}
+
+.community{
+  background-color: white;
+  color: #ba691d;
+
+  h2{
+    text-align: center;
+    margin: 46px 0;
+  }
+
+  p.details{
+   @include shift(2);
+   @include span-columns(8);
+   @include omega; 
+
+   text-align: center;
+  }
+}
+
+.pricing{
+  text-align: center;
+  background-color: #E8F5F2;
+
+  .button{
+    display: block;
+    margin: 10em auto;
+    width: 40%;
+  }
+}
+

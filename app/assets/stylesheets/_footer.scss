@@ -1,0 +1,26 @@
+#main-footer{
+  background-color: #734714;
+  color: white;
+  @include clearfix;
+  padding: 2em 0;
+
+  font-size: .75em;
+
+  li{
+    @include inline-block;
+    margin-right: 1.5em;
+  }
+
+  a, a:hover{
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .links{
+    float: left;
+  }
+
+  .copyright{
+    float: right;
+  }
+}
