@@ -6,4 +6,10 @@ feature "Static pages" do
 
     expect(page).to have_content "E-Sensei"
   end
+
+  scenario "Guest views pricing" do
+    visit pricing_path
+
+    expect(page).to have_content "Pricing"
+  end
 end

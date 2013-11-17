@@ -1,0 +1,77 @@
+.pricing-details{
+  color: #734714;
+  margin-bottom: 2em;
+  
+  h1{
+    margin: 1em 0;
+  }
+
+  h1, .header-row{
+    color: #058789;
+    @include row(table);
+  }
+
+  .header{
+    @include span-columns(3, table);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em 0;
+
+    &.description{
+      @include span-columns(6, table);
+    }
+  }
+
+  .row{
+    @include row(table);
+  }
+
+  .cell{
+    @include span-columns(3,table);
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &.title{
+      padding-left: 3em;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position-x: 3em;
+      background-position-y: center;
+
+      font-weight: bold;
+    }
+
+    &.description{
+      @include span-columns(6,table);
+    }
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .kickstarter{
+    background-color: rgba(#ba691d, .31);
+    
+    .title{
+      background-image: asset_url("kickstarter-icon.png");
+    }
+
+  }
+
+  .dojo{
+    background-color: rgba(#058789, .28);
+
+    .title{
+      background-image: asset_url("dojo-icon.png");
+      background-position-x: 20px;
+    }
+  }
+
+  .coming-soon{
+    font-style: italic;
+    font-weight: bold;
+  }
+
+
+}
