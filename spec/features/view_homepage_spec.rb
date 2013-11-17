@@ -4,6 +4,6 @@ feature "Static pages" do
   scenario "Guest views homepage" do
     visit root_path
 
-    expect(page).to have_content "E-Sensai"
+    expect(page).to have_content "E-Sensei"
   end
 end
