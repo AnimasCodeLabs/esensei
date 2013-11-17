@@ -23,14 +23,26 @@
   }
 }
 
-.how-it-works{
-  background-color: #fff;
+%homepage-section{
+  padding: 2em 0;
 
   h2{
     text-align: center;
     margin: 46px 0;
   }
 
+  p.details{
+   @include shift(2);
+   @include span-columns(8);
+   @include omega; 
+
+   text-align: center;
+  }
+}
+
+.how-it-works{
+  @extend %homepage-section;
+  background-color: #fff;
 
   .video{
     @include span-columns(6);
@@ -51,21 +63,9 @@
 }
 
 .learn{
+  @extend %homepage-section;
   background-color: #ba691d;
   color: white;
-
-  h2{
-    text-align: center;
-    margin: 46px 0;
-  }
-
-  p.details{
-   @include shift(2);
-   @include span-columns(8);
-   @include omega; 
-
-   text-align: center;
-  }
 
   .categories{
     @include span-columns(12);
@@ -85,20 +85,8 @@
 }
 
 .connect{
+  @extend %homepage-section;
   color: #158788;
-
-  h2{
-    text-align: center;
-    margin: 46px 0;
-  }
-
-  p.details{
-   @include shift(2);
-   @include span-columns(8);
-   @include omega; 
-
-   text-align: center;
-  }
 
   .senseis{
     @include span-columns(12);
@@ -119,21 +107,9 @@
 }
 
 .community{
+  @extend %homepage-section;
   background-color: white;
   color: #ba691d;
-
-  h2{
-    text-align: center;
-    margin: 46px 0;
-  }
-
-  p.details{
-   @include shift(2);
-   @include span-columns(8);
-   @include omega; 
-
-   text-align: center;
-  }
 }
 
 .pricing{
@@ -142,8 +118,14 @@
 
   .button{
     display: block;
-    margin: 10em auto;
+    margin: 160px auto;
     width: 40%;
+    font-size: 1.5em;
+    padding: 20px 32px;
+    border-radius: 16px;
+  }
+  a, a:visited{
+    color: white;
   }
 }
 
