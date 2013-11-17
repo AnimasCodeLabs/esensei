@@ -99,6 +99,10 @@
     @include omega(3n);
     text-align:center;
 
+    img{
+      border-radius: 6px;
+    }
+
     .caption{
       text-transform: uppercase;
       font-size: 1.25em;
