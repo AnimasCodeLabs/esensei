@@ -74,4 +74,21 @@
   }
 
 
+  .sign-up{
+    text-align: center;
+    margin-top: 2em;
+
+    .button{
+      @include inline-block;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      padding: .5em 2em;
+      border-radius: .5em; 
+
+      &, &:hover{
+        color: white;
+      }
+    }
+  }
+
 }
