@@ -30,7 +30,15 @@
   }
 
   .logo{
+    @include inline-block;
     margin-top: em(-49);
+    position: relative;
+  }
+
+  .logo-tagline{
+    position: absolute;
+    right: -163px;
+    bottom: 54px;
   }
    
 }
