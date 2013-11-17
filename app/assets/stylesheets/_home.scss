@@ -64,4 +64,20 @@
    @include span-columns(10);
    @include omega; 
   }
+
+  .categories{
+    @include span-columns(12);
+    @include omega;
+    margin: 2em 0;
+  }
+  .category{
+    @include span-columns(3);
+    @include omega(4n);
+    text-align:center;
+
+    .caption{
+      text-transform: uppercase;
+      font-size: 1.25em;
+    }
+  }
 }
