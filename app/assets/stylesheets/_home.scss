@@ -43,6 +43,7 @@
 .how-it-works{
   @extend %homepage-section;
   background-color: #fff;
+  color: #744708;
 
   .video{
     @include span-columns(6);
